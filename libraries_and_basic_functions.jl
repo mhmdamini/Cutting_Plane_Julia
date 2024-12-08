@@ -195,3 +195,12 @@ function list_of_all_variables(model)
     return all_vars
 end
 
+function draw_box_and_print_cut(message)
+    # Define the width of the box based on the length of the message
+    box_width = length(message) + 4
+
+    # Draw the box
+    println("╔" * "═"^box_width * "╗")
+    println("║ " * message * "     ")
+    println("╚" * "═"^box_width * "╝")
+end
